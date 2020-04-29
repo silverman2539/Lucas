@@ -1,0 +1,417 @@
+<html>
+	<head>
+		<title>Money Money</title>
+        <link rel="shortcut icon" href="emoji.ico">
+		<style>
+			body
+			{
+				background-color: aqua;
+				color: navy;
+				font-size: 25;
+				text-align: center;
+				padding: 25;
+				border-style: solid;
+				border-color: deepskyblue;
+			}
+			div
+			{
+				width: 500;
+				border-style: solid;
+				border-color: blue;
+				color: mediumslateblue;
+				background-color: mediumturquoise;
+				margin: auto;
+			}
+			button
+			{
+				border-style: solid;
+				border-color: lime;
+				color: green;
+				background-color: palegreen;
+				font-size: 15;
+			}
+			button:hover
+			{
+				opacity: 50%;
+			}
+			button:disabled
+			{
+				opacity: 25%;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<p style="font-size:50;">Lucas's Quiz</p>
+		<p style="font-size:35;" id="score">Score: 0 / 5</p>
+		<div id="question1">
+			<p>What's my favorite video game?</p>
+			<button id="1a" onclick="Question1a()">Mario Kart</button>
+			<br><br>
+			<button id="1b" onclick="Question1b()">Minecraft</button>
+			<br><br>
+			<button id="1c" onclick="Question1c()">Roblox</button>
+			<br><br>
+			<button id="1d" onclick="Question1d()">The Sims Mobile</button>
+			<br><br>
+		</div>
+		<br>
+		<div id="question2">
+			<p>What's my favorite stuffed animal?</p>
+			<button id="2a" onclick="Question2a()">Black</button>
+			<br><br>
+			<button id="2b" onclick="Question2b()">Fluffy</button>
+			<br><br>
+			<button id="2c" onclick="Question2c()">Ring-Ring</button>
+			<br><br>
+			<button id="2d" onclick="Question2d()">Snowy Jr.</button>
+			<br><br>
+		</div>
+		<br>
+		<div id="question3">
+			<p>How much do I like video games?</p>
+			<button id="3a" onclick="Question3a()">10%</button>
+			<br><br>
+			<button id="3b" onclick="Question3b()">30%</button>
+			<br><br>
+			<button id="3c" onclick="Question3c()">50%</button>
+			<br><br>
+			<button id="3d" onclick="Question3d()">70%</button>
+			<br><br>
+		</div>
+		<br>
+		<div id="question4">
+			<p>How many people are in my family?</p>
+			<p style="font-size:20;">Hint: animals count even though they aren't people</p>
+			<button id="4a" onclick="Question4a()">3</button>
+			<br><br>
+			<button id="4b" onclick="Question4b()">5</button>
+			<br><br>
+			<button id="4c" onclick="Question4c()">7</button>
+			<br><br>
+			<button id="4d" onclick="Question4d()">9</button>
+			<br><br>
+		</div>
+		<br>
+		<div id="question5">
+			<p>How many blankets does Hannah have?</p>
+			<button id="5a" onclick="Question5a()">2</button>
+			<br><br>
+			<button id="5b" onclick="Question5b()">3</button>
+			<br><br>
+			<button id="5c" onclick="Question5c()">5</button>
+			<br><br>
+			<button id="5d" onclick="Question5d()">7</button>
+			<br><br>
+		</div>
+		
+		<script>
+			var score = 0;
+			
+			function Question1a()
+			{
+				document.getElementById("1a").disabled = true;
+				document.getElementById("1b").disabled = true;
+				document.getElementById("1c").disabled = true;
+				document.getElementById("1d").disabled = true;
+				
+				document.getElementById("1a").style.opacity = 100;
+				document.getElementById("1a").style.color = "red";
+				document.getElementById("1a").style.borderColor = "hotpink";
+				document.getElementById("1a").style.backgroundColor = "pink";
+				
+				document.getElementById("1b").style.opacity = 100;
+				
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+			function Question1b()
+			{
+				document.getElementById("1a").disabled = true;
+				document.getElementById("1b").disabled = true;
+				document.getElementById("1c").disabled = true;
+				document.getElementById("1d").disabled = true;
+				
+				document.getElementById("1b").style.opacity = 100;
+				
+				score = score + 1;
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+			function Question1c()
+			{
+				document.getElementById("1a").disabled = true;
+				document.getElementById("1b").disabled = true;
+				document.getElementById("1c").disabled = true;
+				document.getElementById("1d").disabled = true;
+				
+				document.getElementById("1c").style.opacity = 100;
+				document.getElementById("1c").style.color = "red";
+				document.getElementById("1c").style.borderColor = "hotpink";
+				document.getElementById("1c").style.backgroundColor = "pink";
+				
+				document.getElementById("1b").style.opacity = 100;
+				
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+			function Question1d()
+			{
+				document.getElementById("1a").disabled = true;
+				document.getElementById("1b").disabled = true;
+				document.getElementById("1c").disabled = true;
+				document.getElementById("1d").disabled = true;
+				
+				document.getElementById("1d").style.opacity = 100;
+				document.getElementById("1d").style.color = "red";
+				document.getElementById("1d").style.borderColor = "hotpink";
+				document.getElementById("1d").style.backgroundColor = "pink";
+				
+				document.getElementById("1b").style.opacity = 100;
+				
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+			
+			function Question2a()
+			{
+				document.getElementById("2a").disabled = true;
+				document.getElementById("2b").disabled = true;
+				document.getElementById("2c").disabled = true;
+				document.getElementById("2d").disabled = true;
+				
+				document.getElementById("2a").style.opacity = 100;
+				document.getElementById("2a").style.color = "red";
+				document.getElementById("2a").style.borderColor = "hotpink";
+				document.getElementById("2a").style.backgroundColor = "pink";
+				
+				document.getElementById("2b").style.opacity = 100;
+				
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+			function Question2b()
+			{
+				document.getElementById("2a").disabled = true;
+				document.getElementById("2b").disabled = true;
+				document.getElementById("2c").disabled = true;
+				document.getElementById("2d").disabled = true;
+				
+				document.getElementById("2b").style.opacity = 100;
+				
+				score = score + 1;
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+			function Question2c()
+			{
+				document.getElementById("2a").disabled = true;
+				document.getElementById("2b").disabled = true;
+				document.getElementById("2c").disabled = true;
+				document.getElementById("2d").disabled = true;
+				
+				document.getElementById("2c").style.opacity = 100;
+				document.getElementById("2c").style.color = "red";
+				document.getElementById("2c").style.borderColor = "hotpink";
+				document.getElementById("2c").style.backgroundColor = "pink";
+				
+				document.getElementById("2b").style.opacity = 100;
+				
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+			function Question2d()
+			{
+				document.getElementById("2a").disabled = true;
+				document.getElementById("2b").disabled = true;
+				document.getElementById("2c").disabled = true;
+				document.getElementById("2d").disabled = true;
+				
+				document.getElementById("2d").style.opacity = 100;
+				document.getElementById("2d").style.color = "red";
+				document.getElementById("2d").style.borderColor = "hotpink";
+				document.getElementById("2d").style.backgroundColor = "pink";
+				
+				document.getElementById("2b").style.opacity = 100;
+				
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+			
+			function Question3a()
+			{
+				document.getElementById("3a").disabled = true;
+				document.getElementById("3b").disabled = true;
+				document.getElementById("3c").disabled = true;
+				document.getElementById("3d").disabled = true;
+				
+				document.getElementById("3a").style.opacity = 100;
+				document.getElementById("3a").style.color = "red";
+				document.getElementById("3a").style.borderColor = "hotpink";
+				document.getElementById("3a").style.backgroundColor = "pink";
+				
+				document.getElementById("3d").style.opacity = 100;
+				
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+			function Question3b()
+			{
+				document.getElementById("3a").disabled = true;
+				document.getElementById("3b").disabled = true;
+				document.getElementById("3c").disabled = true;
+				document.getElementById("3d").disabled = true;
+				
+				document.getElementById("3b").style.opacity = 100;
+				document.getElementById("3b").style.color = "red";
+				document.getElementById("3b").style.borderColor = "hotpink";
+				document.getElementById("3b").style.backgroundColor = "pink";
+				
+				document.getElementById("3d").style.opacity = 100;
+				
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+			function Question3c()
+			{
+				document.getElementById("3a").disabled = true;
+				document.getElementById("3b").disabled = true;
+				document.getElementById("3c").disabled = true;
+				document.getElementById("3d").disabled = true;
+				
+				document.getElementById("3c").style.opacity = 100;
+				document.getElementById("3c").style.color = "red";
+				document.getElementById("3c").style.borderColor = "hotpink";
+				document.getElementById("3c").style.backgroundColor = "pink";
+				
+				document.getElementById("3d").style.opacity = 100;
+				
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+			function Question3d()
+			{
+				document.getElementById("3a").disabled = true;
+				document.getElementById("3b").disabled = true;
+				document.getElementById("3c").disabled = true;
+				document.getElementById("3d").disabled = true;
+				
+				document.getElementById("3d").style.opacity = 100;
+				
+				score = score + 1;
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+			
+			function Question4a()
+			{
+				document.getElementById("4a").disabled = true;
+				document.getElementById("4b").disabled = true;
+				document.getElementById("4c").disabled = true;
+				document.getElementById("4d").disabled = true;
+				
+				document.getElementById("4a").style.opacity = 100;
+				document.getElementById("4a").style.color = "red";
+				document.getElementById("4a").style.borderColor = "hotpink";
+				document.getElementById("4a").style.backgroundColor = "pink";
+				
+				document.getElementById("4d").style.opacity = 100;
+				
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+			function Question4b()
+			{
+				document.getElementById("4a").disabled = true;
+				document.getElementById("4b").disabled = true;
+				document.getElementById("4c").disabled = true;
+				document.getElementById("4d").disabled = true;
+				
+				document.getElementById("4b").style.opacity = 100;
+				document.getElementById("4b").style.color = "red";
+				document.getElementById("4b").style.borderColor = "hotpink";
+				document.getElementById("4b").style.backgroundColor = "pink";
+				
+				document.getElementById("4d").style.opacity = 100;
+				
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+			function Question4c()
+			{
+				document.getElementById("4a").disabled = true;
+				document.getElementById("4b").disabled = true;
+				document.getElementById("4c").disabled = true;
+				document.getElementById("4d").disabled = true;
+				
+				document.getElementById("4c").style.opacity = 100;
+				document.getElementById("4c").style.color = "red";
+				document.getElementById("4c").style.borderColor = "hotpink";
+				document.getElementById("4c").style.backgroundColor = "pink";
+				
+				document.getElementById("4d").style.opacity = 100;
+				
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+			function Question4d()
+			{
+				document.getElementById("4a").disabled = true;
+				document.getElementById("4b").disabled = true;
+				document.getElementById("4c").disabled = true;
+				document.getElementById("4d").disabled = true;
+				
+				document.getElementById("4d").style.opacity = 100;
+				
+				score = score + 1;
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+			
+			function Question5a()
+			{
+				document.getElementById("5a").disabled = true;
+				document.getElementById("5b").disabled = true;
+				document.getElementById("5c").disabled = true;
+				document.getElementById("5d").disabled = true;
+				
+				document.getElementById("5a").style.opacity = 100;
+				document.getElementById("5a").style.color = "red";
+				document.getElementById("5a").style.borderColor = "hotpink";
+				document.getElementById("5a").style.backgroundColor = "pink";
+				
+				document.getElementById("5d").style.opacity = 100;
+				
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+			function Question5b()
+			{
+				document.getElementById("5a").disabled = true;
+				document.getElementById("5b").disabled = true;
+				document.getElementById("5c").disabled = true;
+				document.getElementById("5d").disabled = true;
+				
+				document.getElementById("5b").style.opacity = 100;
+				document.getElementById("5b").style.color = "red";
+				document.getElementById("5b").style.borderColor = "hotpink";
+				document.getElementById("5b").style.backgroundColor = "pink";
+				
+				document.getElementById("5d").style.opacity = 100;
+				
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+			function Question5c()
+			{
+				document.getElementById("5a").disabled = true;
+				document.getElementById("5b").disabled = true;
+				document.getElementById("5c").disabled = true;
+				document.getElementById("5d").disabled = true;
+				
+				document.getElementById("5c").style.opacity = 100;
+				document.getElementById("5c").style.color = "red";
+				document.getElementById("5c").style.borderColor = "hotpink";
+				document.getElementById("5c").style.backgroundColor = "pink";
+				
+				document.getElementById("5d").style.opacity = 100;
+				
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+			function Question5d()
+			{
+				document.getElementById("5a").disabled = true;
+				document.getElementById("5b").disabled = true;
+				document.getElementById("5c").disabled = true;
+				document.getElementById("5d").disabled = true;
+				
+				document.getElementById("5d").style.opacity = 100;
+				
+				score = score + 1;
+				document.getElementById("score").innerHTML = "Score: " + score + " / 5";
+			}
+		</script>
+	</body>
+</html>
